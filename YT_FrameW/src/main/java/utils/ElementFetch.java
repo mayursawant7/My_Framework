@@ -33,7 +33,7 @@ public class ElementFetch {
 		}
 		
 	}	
-		public List<WebElement> getListWebElement(String identifierType,String identifierValue) {
+		public List<WebElement> getListWebElements(String identifierType,String identifierValue) {
 			switch(identifierType) {
 			case "ID":
 				return BaseTest.driver.findElements(By.id(identifierValue));
